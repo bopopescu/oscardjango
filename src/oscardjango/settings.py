@@ -126,7 +126,7 @@ INSTALLED_APPS = INSTALLED_APPS + [
     #custom apps
     # 'customapps.apps.brandslider', 
     # 'customapps.apps.megamenu',
-] + get_core_apps(['customapps.apps.address','customapps.apps.partner'])
+] + get_core_apps(['customapps.apps.address','customapps.apps.partner','customapps.apps.dashboard.partners'])
 
 SITE_ID = 1
 
@@ -190,5 +190,5 @@ OSCAR_DEFAULT_CURRENCY = "INR"
 OSCAR_SHOP_TAGLINE = 'django oscar marketplace'
 OSCAR_SHOP_NAME = 'oscardjango'
 
-OSCAR_REQUIRED_ADDRESS_FIELDS = ('company_name','customer_name', 'detail_address', 'line4', 'phone_number',
+OSCAR_REQUIRED_ADDRESS_FIELDS = ('customer_name', 'detail_address', 'line4', 'phone_number',
             'postcode','state','country')
