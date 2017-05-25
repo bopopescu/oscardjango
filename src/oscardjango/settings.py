@@ -189,3 +189,6 @@ OSCAR_ORDER_STATUS_PIPELINE = {
 OSCAR_DEFAULT_CURRENCY = "INR"
 OSCAR_SHOP_TAGLINE = 'django oscar marketplace'
 OSCAR_SHOP_NAME = 'oscardjango'
+
+OSCAR_REQUIRED_ADDRESS_FIELDS = ('company_name','customer_name', 'detail_address', 'line4', 'phone_number',
+            'postcode','state','country')
