@@ -126,7 +126,7 @@ INSTALLED_APPS = INSTALLED_APPS + [
     #custom apps
     # 'customapps.apps.brandslider', 
     # 'customapps.apps.megamenu',
-] + get_core_apps(['customapps.apps.address'])
+] + get_core_apps(['customapps.apps.address','customapps.apps.partner'])
 
 SITE_ID = 1
 
