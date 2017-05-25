@@ -4,13 +4,9 @@ from customapps.apps.address.models import UserAddress
 from oscar.views.generic import PhoneNumberMixin
 
 
-class UserAddressForm(PhoneNumberMixin, AbstractAddressForm):
-    def __init__(self, user, *args, **kwargs):
-        super(UserAddressForm, self).__init__(*args, **kwargs)
-        self.instance.user = user
-
+class PartnerAddressForm(PhoneNumberMixin, AbstractAddressForm):
     class Meta:
-        model = UserAddress
+        model = PartnerAddress
         fields = [
             'customer_name', 'detail_address','line2','line3', 'line4', 'phone_number',
             'postcode','state','country'
