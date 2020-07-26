@@ -131,7 +131,7 @@ class CommonPasswordValidator(validators.BaseValidator):
         'mustang',
         'michael',
         'shadow',
-        'master',
+        'main',
         'jennifer',
         '111111',
         '2000',

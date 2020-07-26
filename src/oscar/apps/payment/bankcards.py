@@ -1,7 +1,7 @@
 from django.utils.six.moves import map
 
 VISA, VISA_ELECTRON, MASTERCARD, AMEX, MAESTRO, DISCOVER = (
-    'Visa', 'Visa Electron', 'Mastercard', 'American Express',
+    'Visa', 'Visa Electron', 'Maincard', 'American Express',
     'Maestro', 'Discover')
 DINERS_CLUB = 'Diners Club'
 CHINA_UNIONPAY = 'China UnionPay'
@@ -25,8 +25,8 @@ CARD_TYPES = [
     (MAESTRO, list(range(12, 20)), ('5018', '5020', '5038', '5893', '6304',
                                     '6759', '6761', '6762', '6763', '0604')),
     (MASTERCARD, (16,), list(map(str, list(range(51, 56))))),
-    # Diners Club cards match the same pattern as Mastercard.  They are treated
-    # as Mastercard normally so we put the mastercard pattern first.
+    # Diners Club cards match the same pattern as Maincard.  They are treated
+    # as Maincard normally so we put the maincard pattern first.
     (DINERS_CLUB, (16,), ('54', '55')),
     (SOLO, list(range(16, 20)), ('6334', '6767')),
     (SWITCH, list(range(16, 20)), ('4903', '4905', '4911', '4936',

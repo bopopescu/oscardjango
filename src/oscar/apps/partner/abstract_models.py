@@ -136,7 +136,7 @@ class AbstractStockRecord(models.Model):
     num_in_stock = models.PositiveIntegerField(
         _("Number in stock"), blank=True, null=True)
 
-    #: The amount of stock allocated to orders but not fed back to the master
+    #: The amount of stock allocated to orders but not fed back to the main
     #: stock system.  A typical stock update process will set the num_in_stock
     #: variable to a new value and reset num_allocated to zero
     num_allocated = models.IntegerField(
